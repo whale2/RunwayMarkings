@@ -54,7 +54,7 @@ namespace BWStatics
 			Vector3 east = Vector3.Cross(upVector, north).normalized;
 			Vector3 forward = Vector3.ProjectOnPlane(gameObject.transform.forward, upVector);
 			float heading = Vector3.Angle (forward, north);
-			if (Vector3.Dot (forward, east) > 0)
+			if (Vector3.Dot (forward, east) < 0)
 				heading = 360 - heading;
 			return (int)heading;
 		}
