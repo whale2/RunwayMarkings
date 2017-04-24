@@ -21,7 +21,7 @@ namespace BWStatics
 			}	
 		}
 
-		public override void onStaticObjectUpdate() {
+		public override void StaticObjectUpdate() {
 			setTextures ();
 		}
 
